@@ -13,4 +13,9 @@ button and a previous button. The app allows users to cycle through images
 and read summary descriptions. Pressing next goes to the next image and
 it's description, pressing prev goes back. The app displays and indicator so users know how many items are in the list.
 
-![image info app](screenshots/path_to_screenshot_file.png)
+![image info app](lab-tara/screenshots/image-app-1.png)
+![image info app](lab-tara/screenshots/image-app-2.png)
+![image info app](lab-tara/screenshots/image-app-3.png)
+![image info app](lab-tara/screenshots/image-app-4.png)
+![image info app](lab-tara/screenshots/image-app-5.png)
+![image info app](lab-tara/screenshots/image-app-6.png)
