@@ -1,3 +1,10 @@
+
+![Click App Default](https://github.com/GoldBeardSea/26-simple-android-apps/blob/master/screenshots/click1.png)
+![Click App Some Clicks](https://github.com/GoldBeardSea/26-simple-android-apps/blob/master/screenshots/click2.png)
+![Image App 1](https://github.com/GoldBeardSea/26-simple-android-apps/blob/master/screenshots/images1.png)
+![Image App 2 ](https://github.com/GoldBeardSea/26-simple-android-apps/blob/master/screenshots/images2.png)
+![Image App 3](https://github.com/GoldBeardSea/26-simple-android-apps/blob/master/screenshots/images3.png)
+
 # ![CF](http://i.imgur.com/7v5ASc8.png) Simple Android Apps
 
 ## Resources  
