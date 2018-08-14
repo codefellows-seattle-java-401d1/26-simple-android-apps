@@ -5,10 +5,11 @@ This application is a proof of life project to learn basic layout and design of 
 
 ##Screenshots
 
+
 **External View**
-
-
+![before click image](/Users/sooz/codefellows/401Java/Labs/26-simple-android-apps/ButtonApp/screenshots/beforeclick_screenshot.png)
+![after click image](/Users/sooz/codefellows/401Java/Labs/26-simple-android-apps/ButtonApp/screenshots/afterclick_screenshot.png)
 
 **Internal Editor View**
-![before click image](screenshots/Screen Shot 2018-08-14 at 8.37.25 AM.png)
-![after click image](/Users/sooz/codefellows/401Java/Labs/26-simple-android-apps/ButtonApp/screenshots/Screen Shot 2018-08-14 at 8.29.13 AM.png)
+![before click image](screenshots/beforeclick_screenshot.png)
+![after click image](screenshots/afterclick_screenshot.png)
