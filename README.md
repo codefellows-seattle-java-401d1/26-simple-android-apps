@@ -1,5 +1,9 @@
 # ![CF](http://i.imgur.com/7v5ASc8.png) Simple Android Apps
 
+## Screenshots
+![](screenshots/counter-app.png)
+![](screenshots/img-info-app.png)
+
 ## Resources  
   * [Android Buttons](https://developer.android.com/guide/topics/ui/controls/button.html)
   * [Android UI Events](https://developer.android.com/guide/topics/ui/ui-events.html)
