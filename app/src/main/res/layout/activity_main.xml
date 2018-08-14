@@ -8,9 +8,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Welcome to Paul's Crypto Stand!"
         android:textAlignment="center"
         android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter how many guests you think we'll have today"
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +28,7 @@
             android:id="@+id/manualEntry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="update total clicks"
+            android:hint="enter expected headcount here"
             android:layout_weight="1"/>
 
         <Button
@@ -29,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="click to update"/>
+            android:text="tap to submit"/>
 
 
     </LinearLayout>
@@ -37,9 +44,16 @@
 
     <Button
         android:id="@+id/clickMe"
-        android:text="click me"
+        android:text="tap me to add an additional unexpected guest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok, now it's time to order from the crypto menu for today's guests! What would you like to order for the event?"
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -49,19 +63,19 @@
         <Button
             android:id="@+id/aClickMe"
             android:layout_weight="1"
-            android:text="a"
+            android:text="Bitcoin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
             android:id="@+id/bClickMe"
             android:layout_weight="1"
-            android:text="b"
+            android:text="Litecoin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
             android:id="@+id/cClickMe"
             android:layout_weight="1"
-            android:text="c"
+            android:text="Encryptnode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -70,7 +84,7 @@
     <TextView
         android:id="@+id/clicks"
         android:textAlignment="center"
-        android:text="Clicks: 0"
+        android:text="Total Guests: 0"
         android:textSize="40sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -80,7 +94,7 @@
     <TextView
         android:id="@+id/aClicks"
         android:textAlignment="center"
-        android:text="a Clicks: 0"
+        android:text="Bitcoins Ordered: 0"
         android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -88,7 +102,7 @@
     <TextView
         android:id="@+id/bClicks"
         android:textAlignment="center"
-        android:text="b Clicks: 0"
+        android:text="Litecoins Ordered: 0"
         android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -96,7 +110,7 @@
     <TextView
         android:id="@+id/cClicks"
         android:textAlignment="center"
-        android:text="c Clicks: 0"
+        android:text="EncryptNodes Ordered: 0"
         android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

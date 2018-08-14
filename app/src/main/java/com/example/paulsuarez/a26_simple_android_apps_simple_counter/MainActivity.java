@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 aClicks++;
-                mAText.setText("clicks: " + aClicks);
+                mAText.setText("Bitcoins Ordered: " + aClicks);
 
             }
         });
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 bClicks++;
-                mBText.setText("clicks: " + bClicks);
+                mBText.setText("Litecoins Ordered: " + bClicks);
 
             }
         });
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 cClicks++;
-                mCText.setText("clicks: " + cClicks);
+                mCText.setText("EncryptNodes Ordered: " + cClicks);
 
             }
         });
