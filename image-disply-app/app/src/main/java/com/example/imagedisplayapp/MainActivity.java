@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView name;
     private TextView category;
     private TextView type;
+    private TextView imageCount;
 
     private Button prev;
     private Button next;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         name = findViewById(R.id.name);
         category = findViewById(R.id.category);
         type = findViewById(R.id.type);
+        imageCount = findViewById(R.id.imageCountTracker);
 
 
         prev = findViewById(R.id.prev);
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
     public void showFabric() {
         cycleBounds();
 
+        imageCount.setText((currentIndex+1) + "/" + fabric.length);
         Fabric fabrics = fabric[currentIndex];
         name.setText(fabrics.name);
         category.setText(fabrics.catagory);
