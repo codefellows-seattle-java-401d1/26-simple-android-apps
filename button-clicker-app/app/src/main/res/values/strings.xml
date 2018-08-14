@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">buttonclicking</string>
+    <string name="increase_team_a">Increase Team A</string>
+    <string name="decrease_team_a">Decrease Team B</string>
+    <string name="click_to_change_count">Click a button below to change Team A\'s score</string>
+    <string name="increase_team_b">Increase Team B</string>
+    <string name="decrease_team_b">Decrease Team B</string>
+    <string name="textview">Click a button below to change Team B\'s score</string>
+    <string name="team_a">TEAM A</string>
+    <string name="team_b">TEAM B</string>
+</resources>
