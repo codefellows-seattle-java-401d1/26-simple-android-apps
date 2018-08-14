@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         currentIndex = 0;
 
+        page = findViewById(R.id.page);
         name = findViewById(R.id.name);
         picture = findViewById(R.id.picture);
         description = findViewById(R.id.description);
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         previous = findViewById(R.id.previous);
         next = findViewById(R.id.next);
 
-        String page = "currentIndex + 1 / curses.length";
+        showPage();
 
         showCurse(currentIndex);
 
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 decrement();
+                showPage();
             }
         });
 
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 increment();
+                showPage();
             }
         });
     }
@@ -103,5 +106,12 @@ public class MainActivity extends AppCompatActivity {
         if (currentIndex == 0) {
             previous.setEnabled(false);
         }
+    }
+
+    public void showPage() {
+        int currentPage = currentIndex + 1;
+        int arrayLength = curses.length;
+
+        page.setText(currentPage + "/" + arrayLength);
     }
 }
