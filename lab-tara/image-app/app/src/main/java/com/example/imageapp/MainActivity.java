@@ -2,10 +2,15 @@ package com.example.imageapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.imageapp.models.ClevelandSportsCurse;
 
 public class MainActivity extends AppCompatActivity {
+    private int currentIndex;
+
     ClevelandSportsCurse[] curses = {
             new ClevelandSportsCurse("The Drive",
                     "Against one of the best defenses in the league, John Elway led Denver on a 98-yard drive to tie the 1987 AFC Championship game with only seconds remaining in regulation. Denver then went on to win the game in overtime 23-20 on a field goal that some Browns fans, to this day, insist sailed wide of the upright."),
@@ -21,9 +26,51 @@ public class MainActivity extends AppCompatActivity {
                     "\"This fall I am taking my talents to South Beach and play with the Miami Heat. The major factor was the best opportunity for me to win, to win now and for the future also. Winning is the most important thing for me. I feel like this is going to be the best opportunity.\" — LeBron James, July 8, 2010")
     };
 
+    private TextView name;
+    private TextView description;
+    private Button previous;
+    private Button next;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        currentIndex = 0;
+
+        name = findViewById(R.id.name);
+        description = findViewById(R.id.description);
+        previous = findViewById(R.id.previous);
+        next = findViewById(R.id.next);
+
+        previous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                decrement();
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                increment();
+            }
+        });
+    }
+
+    public void increment() {
+        currentIndex++;
+        showCurse(currentIndex);
+    }
+
+    public void decrement() {
+        currentIndex--;
+        showCurse(currentIndex);
+    }
+
+    public void showCurse(int index) {
+        ClevelandSportsCurse curse = curses[index];
+        name.setText(curse.name);
+        description.setText(curse.description);
     }
 }
