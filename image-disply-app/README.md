@@ -1,15 +1,13 @@
 # Image Display Add
-Full Path: /Users/amycohen/codefellows/401/lab-amy/26-simple-android-apps/image-disply-app/app/src/main/res/README.md
-
 Displays images and a brief amount of information about each image. Allows the user to scroll through the array of items without getting out of bounds.
 
 # Screenshots
 
 ## From GitHub Directory
-![Screenshot 1]()
-![Screenshot 2]()
-![Screenshot 3]()
-![Screenshot 4]()
+![Screenshot 1](https://github.com/AmyCohen/26-simple-android-apps/blob/master/image-disply-app/screenshots/screenshot-noparagraph-fabric1.png)
+![Screenshot 2](https://github.com/AmyCohen/26-simple-android-apps/blob/master/image-disply-app/screenshots/screenshot-noparagraph-fabric2.png)
+![Screenshot 3](https://github.com/AmyCohen/26-simple-android-apps/blob/master/image-disply-app/screenshots/screenshot-withparagraph-fabric1.png)
+![Screenshot 4](https://github.com/AmyCohen/26-simple-android-apps/blob/master/image-disply-app/screenshots/screenshot-withparagraph-fabric2.png)
 
 
 ## From Local Directory
