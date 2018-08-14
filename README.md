@@ -5,7 +5,7 @@ An application that displays a number and a button. The number increases when th
 stored in properties on your Activity class and manipulate the data inside a
 method bound to a click listener.
 
-![click counter app](lab-tara/screenshots/click-counter-app.png =200x)
+![click counter app](lab-tara/screenshots/click-counter-app.png)
 
 ## Image Info App
 An app that displays an Image, a paragraph (at least) of text, a next
