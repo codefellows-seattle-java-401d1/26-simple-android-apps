@@ -36,18 +36,42 @@
 
         <TextView
             android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="name"
+            android:textAlignment="center"
             android:textSize="30sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:textStyle="bold" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="category"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="type of fabric"
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
+        </LinearLayout>
+
         <TextView
-            android:id="@+id/category"
-            android:text="description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:id="@+id/fabricDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description of fabric"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
     </LinearLayout>
 </ScrollView>

@@ -15,17 +15,55 @@ public class MainActivity extends AppCompatActivity {
     private int currentIndex;
 
     Fabric[] fabric = {
-            new Fabric("Cait", "knit", "DBP", R.drawable.cait),
-            new Fabric("Devon", "knit", "hacci sweater", R.drawable.devon),
-            new Fabric("Jamie", "knit", "DBP", R.drawable.jamie),
-            new Fabric("Maize", "knit", "DBP", R.drawable.maize),
-            new Fabric("Serenity", "knit", "DBP", R.drawable.serenity)
+            new Fabric("Cait", "knit", "DBP", R.drawable.cait, "Brushed Polyester/Spandex\n" +
+                    "\n" +
+                    "\"Double\" - means the fabric is brushed on both sides\n" +
+                    "\"Single\" - means fabric is brushed on one side, smooth on the other. \n" +
+                    "96% POLYESTER / 4% SPANDEX\n" +
+                    "58\"/60\"\" wide \n" +
+                    "Medium weight\n" +
+                    "4 - WAY stretch\n" +
+                    "Works very well for dresses, leggings, tops, etc.\n" +
+                    "CARE: Wash on cold, tumble dry"),
+            new Fabric("Devon", "knit", "hacci sweater", R.drawable.devon, "HACCI SWEATER KNIT\n" +
+                    "POLY/SPANDEX\n" +
+                    "If listing says “Brushed” means is has a brushed “fuzzy” texture to it\n" +
+                    "4-way stretch\n" +
+                    "Medium weight\n" +
+                    "58\" Wide\n" +
+                    "This fabric is very soft and cozy. Perfect for sweaters, tops and dresses. \n" +
+                    "CARE: wash cold, tumble dry or lay flat to dry"),
+            new Fabric("Jamie", "knit", "DBP", R.drawable.jamie, "Brushed Polyester/Spandex\n" +
+                    "\n" +
+                    "\"Double\" - means the fabric is brushed on both sides\n" +
+                    "\"Single\" - means fabric is brushed on one side, smooth on the other. \n" +
+                    "96% POLYESTER / 4% SPANDEX\n" +
+                    "58\"/60\"\" wide \n" +
+                    "Medium weight\n" +
+                    "4 - WAY stretch\n" +
+                    "Works very well for dresses, leggings, tops, etc.\n" +
+                    "CARE: Wash on cold, tumble dry"),
+            new Fabric("Maize", "knit", "DBP", R.drawable.maize, "Brushed Polyester/Spandex\n" +
+                    "\n" +
+                    "\"Double\" - means the fabric is brushed on both sides\n" +
+                    "\"Single\" - means fabric is brushed on one side, smooth on the other. \n" +
+                    "96% POLYESTER / 4% SPANDEX\n" +
+                    "58\"/60\"\" wide \n" +
+                    "Medium weight\n" +
+                    "4 - WAY stretch\n" +
+                    "Works very well for dresses, leggings, tops, etc.\n" +
+                    "CARE: Wash on cold, tumble dry"),
+            new Fabric("Serenity", "knit", "Viscose, Bamboo & Spandex", R.drawable.serenity, "4-way stretch\n" +
+                    "96% Viscose from Bamboo/4% spandex\n" +
+                    "58\"-60\" WIDE Very soft with a nice drape. This fabric works really well for tops, dresses, skirts, etc.\n" +
+                    "CARE: wash cold, tumble dry")
     };
 
     private ImageView picture;
     private TextView name;
     private TextView category;
     private TextView type;
+    private TextView description;
     private TextView imageCount;
 
     private Button prev;
@@ -42,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         name = findViewById(R.id.name);
         category = findViewById(R.id.category);
         type = findViewById(R.id.type);
+        description = findViewById(R.id.fabricDescription);
         imageCount = findViewById(R.id.imageCountTracker);
 
 
@@ -78,10 +117,12 @@ public class MainActivity extends AppCompatActivity {
         cycleBounds();
 
         imageCount.setText((currentIndex+1) + "/" + fabric.length);
+
         Fabric fabrics = fabric[currentIndex];
         name.setText(fabrics.name);
         category.setText(fabrics.catagory);
         type.setText(fabrics.type);
+        description.setText(fabrics.description);
 
         Drawable pic = getResources().getDrawable(fabrics.drawableId);
         picture.setImageDrawable(pic);
