@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         previous = findViewById(R.id.previous);
         next = findViewById(R.id.next);
 
+        showCurse(currentIndex);
+
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,8 +71,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showCurse(int index) {
+        preventBounds();
+
         ClevelandSportsCurse curse = curses[index];
         name.setText(curse.name);
         description.setText(curse.description);
+    }
+
+    public void preventBounds() {
+        next.setEnabled(true);
+        previous.setEnabled(true);
+
+        currentIndex = Math.max(currentIndex, 0);
+        currentIndex = Math.min(currentIndex, curses.length - 1);
+
+        if (currentIndex == curses.length - 1) {
+            next.setEnabled(false);
+        }
+
+        if (currentIndex == 0) {
+            previous.setEnabled(false);
+        }
     }
 }
