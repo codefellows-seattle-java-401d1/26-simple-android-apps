@@ -9,6 +9,12 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         >
+        <Button
+            android:id="@+id/button1"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+1"/>
         <TextView
             android:id="@+id/clicks1"
             android:layout_weight="1"
@@ -18,11 +24,11 @@
             android:textSize="12sp"
             android:text="0"/>
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/button3"
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+1"/>
+            android:text="-1"/>
 
     </LinearLayout>
     <LinearLayout
@@ -30,6 +36,12 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         >
+        <Button
+            android:id="@+id/button2"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+1"/>
         <TextView
             android:id="@+id/clicks2"
             android:layout_weight="1"
@@ -39,11 +51,11 @@
             android:textSize="12sp"
             android:text="0"/>
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button4"
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+1"/>
+            android:text="-1"/>
 
     </LinearLayout>
 

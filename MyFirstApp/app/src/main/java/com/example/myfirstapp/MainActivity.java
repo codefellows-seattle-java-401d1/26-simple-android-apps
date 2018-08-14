@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mButton1;
     private Button mButton2;
+    private Button mButton3;
+    private Button mButton4;
+
     private TextView mText1;
     private TextView mText2;
 
@@ -23,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         mButton2 = findViewById(R.id.button2);
         mText1 = findViewById(R.id.clicks1);
         mText2 = findViewById(R.id.clicks2);
+        mButton3 = findViewById(R.id.button3);
+        mButton4 = findViewById(R.id.button4);
 
         mButton1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -36,6 +41,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 clicks2++;
+                mText2.setText("Clicks:" + clicks2);
+            }
+        });
+        mButton3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                clicks1--;
+                mText1.setText("Clicks:" + clicks1);
+            }
+        });
+
+        mButton4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                clicks2--;
                 mText2.setText("Clicks:" + clicks2);
             }
         });
